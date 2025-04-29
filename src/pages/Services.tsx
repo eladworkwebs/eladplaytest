@@ -1,8 +1,15 @@
-
 import { Smartphone, Wrench, ShoppingCart, HeadphonesIcon, Smartphone as SmartphoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Services = () => {
   const mainServices = [
@@ -46,6 +53,34 @@ const Services = () => {
     "Baterías externas",
     "Adaptadores",
     "Tarjetas de memoria",
+  ];
+
+  const galleryImages = [
+    {
+      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600",
+      alt: "Laptop computer on glass-top table",
+      title: "Reparación de Laptops"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=600",
+      alt: "Person using MacBook Pro",
+      title: "Soporte Apple"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800&h=600",
+      alt: "Gray and black laptop computer on surface",
+      title: "Diagnóstico Profesional"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600",
+      alt: "Macro photography of black circuit board",
+      title: "Reparación de Placas"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&q=80&w=800&h=600",
+      alt: "Stylus pen in front of table computer",
+      title: "Accesorios Premium"
+    }
   ];
 
   return (
@@ -219,6 +254,55 @@ const Services = () => {
             <Button asChild size="lg" className="bg-brand-blue hover:bg-brand-darkBlue text-white">
               <Link to="/contact">Consultar Planes de Crédito</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Galería de Servicios
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore nuestra galería para ver algunos de nuestros trabajos y servicios.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {galleryImages.map((image, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                      <Card className="overflow-hidden group">
+                        <CardContent className="p-0 relative">
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 className="font-medium text-lg">{image.title}</h3>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex items-center justify-center mt-8 gap-2">
+                <CarouselPrevious className="static" />
+                <CarouselNext className="static" />
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>

@@ -27,13 +27,23 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center" onClick={closeMenu}>
-          <img 
-            src="/lovable-uploads/5f1f068e-fa08-4a74-9c5a-7cec716b6a30.png" 
-            alt="Sak Technology Logo" 
-            className="h-10 w-auto"
-          />
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link to="/" className="flex items-center" onClick={closeMenu}>
+            <img 
+              src="/lovable-uploads/5f1f068e-fa08-4a74-9c5a-7cec716b6a30.png" 
+              alt="Sak Technology Logo" 
+              className="h-10 w-auto"
+            />
+          </Link>
+          <div className="hidden md:flex items-center gap-2 bg-gray-200 px-3 py-1 rounded-md">
+            <img 
+              src="/lovable-uploads/9878e94e-4125-40f0-b690-ad2e8874616d.png" 
+              alt="Apple Support Logo" 
+              className="h-6 w-auto"
+            />
+            <span className="text-sm font-medium text-gray-700">Apple Support</span>
+          </div>
+        </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -75,6 +85,15 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden fixed inset-0 top-16 bg-white z-40 p-4">
             <div className="flex flex-col space-y-6 pt-6">
+              <div className="flex items-center gap-2 bg-gray-200 px-3 py-1 rounded-md w-fit">
+                <img 
+                  src="/lovable-uploads/9878e94e-4125-40f0-b690-ad2e8874616d.png" 
+                  alt="Apple Support Logo" 
+                  className="h-6 w-auto"
+                />
+                <span className="text-sm font-medium text-gray-700">Apple Support</span>
+              </div>
+              
               {navItems.map((item) => (
                 <Link
                   key={item.path}
