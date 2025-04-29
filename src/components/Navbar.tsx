@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Apple } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,14 +26,6 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="bg-brand-blue w-full py-1 px-4">
-        <div className="container mx-auto flex items-center justify-end">
-          <div className="flex items-center text-white text-sm gap-1">
-            <Apple size={16} className="text-white" />
-            <span>Soporte Apple Autorizado</span>
-          </div>
-        </div>
-      </div>
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center" onClick={closeMenu}>
           <img 
