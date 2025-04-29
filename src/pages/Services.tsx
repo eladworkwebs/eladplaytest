@@ -3,6 +3,7 @@ import { Smartphone, Wrench, ShoppingCart, HeadphonesIcon, Smartphone as Smartph
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
+import RepairGallery from "@/components/RepairGallery";
 
 const Services = () => {
   const mainServices = [
@@ -130,6 +131,13 @@ const Services = () => {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Repair Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <RepairGallery />
         </div>
       </section>
 
