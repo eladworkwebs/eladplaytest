@@ -28,9 +28,11 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center" onClick={closeMenu}>
-          <span className="text-2xl font-bold text-brand-blue">
-            Sak<span className="text-brand-darkBlue">Technology</span>
-          </span>
+          <img 
+            src="/lovable-uploads/5f1f068e-fa08-4a74-9c5a-7cec716b6a30.png" 
+            alt="Sak Technology Logo" 
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Mobile Menu Button */}

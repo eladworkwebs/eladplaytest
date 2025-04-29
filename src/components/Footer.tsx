@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Smartphone } from "lucide-react";
 
@@ -10,9 +9,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-brand-lightBlue">
-              Sak<span className="text-white">Technology</span>
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/5f1f068e-fa08-4a74-9c5a-7cec716b6a30.png" 
+                alt="Sak Technology Logo" 
+                className="h-10 w-auto filter invert"
+              />
+            </div>
             <p className="text-gray-400 mb-4">
               Su experto confiable en reparación de móviles y accesorios en San Cristóbal de las Casas.
             </p>
