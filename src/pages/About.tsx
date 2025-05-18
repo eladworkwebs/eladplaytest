@@ -24,14 +24,14 @@ const About = () => {
             <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand-blue">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Nuestra Misión</h2>
               <p className="text-lg text-gray-700">
-                Ser una empresa confiable, eficiente y ética en servicios móviles, ofreciendo soluciones de calidad que satisfagan las necesidades de nuestros clientes. Estamos comprometidos con la excelencia en cada servicio, desde reparaciones hasta ventas de dispositivos.
+                Somos una empresa de comercialización de productos y servicios en el área de telefonía móvil, confiable, eficiente y ética; orientada a satisfacer las necesidades y aspiraciones de nuestros clientes.
               </p>
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand-blue">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Nuestra Visión</h2>
               <p className="text-lg text-gray-700">
-                Liderar el mercado de telefonía móvil en San Cristóbal de las Casas y sus alrededores con calidad y servicio excepcionales. Aspiramos a ser reconocidos por nuestra integridad, experiencia técnica y atención al cliente personalizada.
+                Ser líder en la comercialización de productos y servicios en el sector de telefonía móvil, satisfaciendo las necesidades de nuestros clientes, capital humano y sociedad.
               </p>
             </div>
           </div>
