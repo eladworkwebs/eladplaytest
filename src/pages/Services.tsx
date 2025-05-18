@@ -57,29 +57,59 @@ const Services = () => {
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600",
-      alt: "Laptop computer on glass-top table",
-      title: "Reparación de Laptops"
+      src: "/lovable-uploads/444c71fd-bb6b-4471-be85-9c4862ae8a27.png",
+      alt: "Baterías de iPhone y pantallas",
+      title: "Repuestos Originales"
     },
     {
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=600",
-      alt: "Person using MacBook Pro",
-      title: "Soporte Apple"
+      src: "/lovable-uploads/82295bf1-b563-48de-9885-24f7d216e0bb.png",
+      alt: "iPhones rojos en teclado",
+      title: "Equipos Premium"
     },
     {
-      src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800&h=600",
-      alt: "Gray and black laptop computer on surface",
+      src: "/lovable-uploads/6b9a4cb7-8d84-4c83-b164-e55f12dec637.png",
+      alt: "iPhone mostrando diagnóstico",
       title: "Diagnóstico Profesional"
     },
     {
-      src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600",
-      alt: "Macro photography of black circuit board",
-      title: "Reparación de Placas"
+      src: "/lovable-uploads/1234e9c4-bb27-4c89-a0d9-fbcec5d671bd.png",
+      alt: "Reparación de iPhone",
+      title: "Servicio Técnico Especializado"
     },
     {
-      src: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&q=80&w=800&h=600",
-      alt: "Stylus pen in front of table computer",
-      title: "Accesorios Premium"
+      src: "/lovable-uploads/8f468c11-21c2-4f05-a2ed-160819351280.png",
+      alt: "Componentes de iPhone",
+      title: "Repuestos de Calidad"
+    },
+    {
+      src: "/lovable-uploads/374d1640-9d0b-4b59-a25e-2827742b813a.png",
+      alt: "Memorias y componentes",
+      title: "Componentes Originales"
+    },
+    {
+      src: "/lovable-uploads/eae2e86b-c03e-4f93-8617-5c698deef43d.png",
+      alt: "Reparación de pantalla",
+      title: "Servicio de Pantallas"
+    },
+    {
+      src: "/lovable-uploads/8d1729f6-ab37-4721-965b-e032eeea1719.png",
+      alt: "Stock de repuestos",
+      title: "Amplio Inventario"
+    },
+    {
+      src: "/lovable-uploads/f4244949-b60e-4e3f-ab18-92495ce3e90f.png",
+      alt: "iPhones rojos",
+      title: "Equipos Disponibles"
+    },
+    {
+      src: "/lovable-uploads/1b94b14b-53e9-44d5-908a-c0c9397e5cb1.png",
+      alt: "iPhone con diagnóstico",
+      title: "Software Especializado"
+    },
+    {
+      src: "/lovable-uploads/19ac12e6-2985-46c6-a27c-f630d5cd4325.png",
+      alt: "Pantalla de iPhone en reparación",
+      title: "Reemplazo de Pantallas"
     }
   ];
 
