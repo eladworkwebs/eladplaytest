@@ -8,11 +8,11 @@ const Locations = () => {
   const locations = [
     {
       id: 1,
-      name: "Sucursal Centro",
-      address: "Andador del Carmen #11B, Avenida Miguel Hidalgo",
-      phone: "+52 967 123 4567",
-      hours: "Lunes a Sábado: 9:00 AM - 7:00 PM",
-      mapAddress: "Andador del Carmen #11B, Avenida Miguel Hidalgo, San Cristóbal de las Casas, Chiapas, México",
+      name: "Sak Andador del Carmen",
+      address: "Sak Technology, Avenida Miguel Hidalgo, Andador del Carmen 11B, 29200 San Cristóbal de las Casas, Chis.",
+      phone: "+52 967 140 4545",
+      hours: "Lunes a Sábado: 10:00 AM - 8:00 PM",
+      mapAddress: "Sak Technology, Avenida Miguel Hidalgo, Andador del Carmen 11B, 29200 San Cristóbal de las Casas, Chis.",
     },
     {
       id: 2,
