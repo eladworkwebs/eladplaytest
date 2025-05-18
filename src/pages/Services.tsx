@@ -312,16 +312,13 @@ const Services = () => {
                 {galleryImages.map((image, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
-                      <Card className="overflow-hidden group">
-                        <CardContent className="p-0 relative">
+                      <Card className="overflow-hidden">
+                        <CardContent className="p-0">
                           <img
                             src={image.src}
                             alt={image.alt}
-                            className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="w-full aspect-[4/3] object-cover"
                           />
-                          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                            <h3 className="font-medium text-lg">{image.title}</h3>
-                          </div>
                         </CardContent>
                       </Card>
                     </div>
