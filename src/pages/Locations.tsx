@@ -17,10 +17,10 @@ const Locations = () => {
     {
       id: 2,
       name: "Sucursal Guadalupe",
-      address: "Andador de Guadalupe #5C, Belisario Domínguez",
-      phone: "+52 967 987 6543",
-      hours: "Lunes a Sábado: 10:00 AM - 8:00 PM",
-      mapAddress: "Andador de Guadalupe #5C, Belisario Domínguez, San Cristóbal de las Casas, Chiapas, México",
+      address: "Hermanos Paniagua 240, Col del Valle, 29265 San Cristóbal de las Casas, Chis.",
+      phone: "+529 67 126 5566",
+      hours: "Todos los días: 9:00 AM - 6:00 PM",
+      mapAddress: "Hermanos Paniagua 240, Col del Valle, 29265 San Cristóbal de las Casas, Chis.",
     },
   ];
 
