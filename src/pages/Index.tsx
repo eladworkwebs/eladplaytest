@@ -1,35 +1,24 @@
-
 import { Smartphone, Wrench, ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import Map from "@/components/Map";
-
 const Index = () => {
-  const services = [
-    {
-      icon: <Wrench size={24} />,
-      title: "Reparación de Teléfonos",
-      description:
-        "Servicio profesional de reparación para todo tipo de teléfonos móviles, incluidas pantallas, baterías y más.",
-    },
-    {
-      icon: <ShoppingCart size={24} />,
-      title: "Venta de Accesorios",
-      description:
-        "Amplia gama de accesorios y repuestos originales para mejorar y proteger su dispositivo.",
-    },
-    {
-      icon: <Smartphone size={24} />,
-      title: "Venta de Teléfonos a Crédito",
-      description:
-        "Adquiera su nuevo smartphone con planes de financiamiento flexibles y adaptados a sus necesidades.",
-    },
-  ];
-
-  return (
-    <>
+  const services = [{
+    icon: <Wrench size={24} />,
+    title: "Reparación de Teléfonos",
+    description: "Servicio profesional de reparación para todo tipo de teléfonos móviles, incluidas pantallas, baterías y más."
+  }, {
+    icon: <ShoppingCart size={24} />,
+    title: "Venta de Accesorios",
+    description: "Amplia gama de accesorios y repuestos originales para mejorar y proteger su dispositivo."
+  }, {
+    icon: <Smartphone size={24} />,
+    title: "Venta de Teléfonos a Crédito",
+    description: "Adquiera su nuevo smartphone con planes de financiamiento flexibles y adaptados a sus necesidades."
+  }];
+  return <>
       <HeroSection />
 
       {/* Services Section */}
@@ -45,14 +34,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-              />
-            ))}
+            {services.map((service, index) => <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />)}
           </div>
 
           <div className="mt-12 text-center">
@@ -68,11 +50,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500"
-                alt="Tienda Sak Technology"
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500" alt="Tienda Sak Technology" className="rounded-lg shadow-lg w-full h-auto object-cover" />
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -106,7 +84,7 @@ const Index = () => {
               <div className="h-64">
                 <Map address="Andador del Carmen #11B, Avenida Miguel Hidalgo, San Cristóbal de las Casas, Chiapas, México" />
               </div>
-              <div className="p-6">
+              <div className="p-6 py-[24px] px-[23px] my-[18px]">
                 <h3 className="text-xl font-bold mb-2">Sucursal Centro</h3>
                 <p className="text-gray-600 mb-4">
                   Andador del Carmen #11B, Avenida Miguel Hidalgo
@@ -121,7 +99,7 @@ const Index = () => {
               <div className="h-64">
                 <Map address="Andador de Guadalupe #5C, Belisario Domínguez, San Cristóbal de las Casas, Chiapas, México" />
               </div>
-              <div className="p-6">
+              <div className="p-6 my-[18px]">
                 <h3 className="text-xl font-bold mb-2">Sucursal Guadalupe</h3>
                 <p className="text-gray-600 mb-4">
                   Andador de Guadalupe #5C, Belisario Domínguez
@@ -154,8 +132,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Index;
