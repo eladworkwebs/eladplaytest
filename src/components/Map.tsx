@@ -4,9 +4,10 @@ import { useEffect, useRef } from "react";
 interface MapProps {
   address: string;
   zoom?: number;
+  height?: string;
 }
 
-const Map = ({ address, zoom = 15 }: MapProps) => {
+const Map = ({ address, zoom = 15, height = "100%" }: MapProps) => {
   const mapRef = useRef<HTMLIFrameElement>(null);
 
   // Encode the address for the Google Maps URL
@@ -16,7 +17,7 @@ const Map = ({ address, zoom = 15 }: MapProps) => {
   const mapUrl = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=${zoom}&ie=UTF8&iwloc=&output=embed`;
 
   return (
-    <div className="w-full h-full min-h-[300px]">
+    <div className="w-full h-full" style={{ minHeight: height }}>
       <iframe
         ref={mapRef}
         title={`Map showing ${address}`}

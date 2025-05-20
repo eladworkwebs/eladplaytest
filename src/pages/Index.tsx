@@ -1,10 +1,10 @@
-
-import { Smartphone, Wrench, ShoppingCart } from "lucide-react";
+import { Smartphone, Wrench, ShoppingCart, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import ServiceCard from "@/components/ServiceCard";
 import Map from "@/components/Map";
+
 const Index = () => {
   const services = [{
     icon: <Wrench size={24} />,
@@ -81,13 +81,18 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* First location */}
             <div className="rounded-lg shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-64">
-                <Map address="Andador del Carmen #11B, Avenida Miguel Hidalgo, San Cristóbal de las Casas, Chiapas, México" />
+              <div className="h-64 relative">
+                <Map 
+                  address="Andador del Carmen #11B, Avenida Miguel Hidalgo, San Cristóbal de las Casas, Chiapas, México" 
+                  height="256px"
+                />
               </div>
-              <div className="p-6 py-[24px] px-[23px] my-[18px] bg-white">
+              <div className="p-6 bg-white">
                 <h3 className="text-xl font-bold mb-2">Sak Andador del Carmen</h3>
-                <p className="text-gray-600 mb-4">Sak Technology, Avenida Miguel Hidalgo, Andador del Carmen 11B, 29200 San Cristóbal de las Casas, Chis.
+                <p className="text-gray-600 mb-4">
+                  Sak Technology, Avenida Miguel Hidalgo, Andador del Carmen 11B, 29200 San Cristóbal de las Casas, Chis.
                 </p>
                 <Button asChild size="sm" className="bg-brand-blue hover:bg-brand-darkBlue text-white">
                   <Link to="/locations">Ver Detalles</Link>
@@ -95,11 +100,15 @@ const Index = () => {
               </div>
             </div>
             
+            {/* Second location */}
             <div className="rounded-lg shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-64">
-                <Map address="Andador de Guadalupe #5C, Belisario Domínguez, San Cristóbal de las Casas, Chiapas, México" />
+              <div className="h-64 relative">
+                <Map 
+                  address="Andador de Guadalupe #5C, Belisario Domínguez, San Cristóbal de las Casas, Chiapas, México" 
+                  height="256px"
+                />
               </div>
-              <div className="p-6 my-[18px] bg-white">
+              <div className="p-6 bg-white">
                 <h3 className="text-xl font-bold mb-2">Sucursal Guadalupe</h3>
                 <p className="text-gray-600 mb-4">
                   Andador de Guadalupe #5C, Belisario Domínguez
@@ -126,11 +135,10 @@ const Index = () => {
             <Button asChild size="lg" className="bg-white text-brand-blue hover:bg-gray-100">
               <Link to="/contact">Contactar Ahora</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 flex items-center gap-2">
-              <a href="tel:+529671234567">
-                <span className="flex items-center gap-2">
-                  Llamar
-                </span>
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <a href="tel:+529671234567" className="flex items-center gap-2">
+                <Phone size={20} />
+                <span>Llamar</span>
               </a>
             </Button>
           </div>
@@ -138,4 +146,5 @@ const Index = () => {
       </section>
     </>;
 };
+
 export default Index;
