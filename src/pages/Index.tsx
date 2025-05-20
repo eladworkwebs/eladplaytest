@@ -85,7 +85,7 @@ const Index = () => {
                 <Map address="Andador del Carmen #11B, Avenida Miguel Hidalgo, San Cristóbal de las Casas, Chiapas, México" />
               </div>
               <div className="p-6 py-[24px] px-[23px] my-[18px]">
-                <h3 className="text-xl font-bold mb-2">Sucursal Centro</h3>
+                <h3 className="text-xl font-bold mb-2">Sak Andadir del Carmen</h3>
                 <p className="text-gray-600 mb-4">
                   Andador del Carmen #11B, Avenida Miguel Hidalgo
                 </p>
