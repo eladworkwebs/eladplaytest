@@ -86,9 +86,9 @@ const Index = () => {
               </div>
               <div className="p-6 py-[24px] px-[23px] my-[18px]">
                 <h3 className="text-xl font-bold mb-2">Sak Andador del Carmen</h3>
-                <p className="text-gray-600 mb-4">
-                  Andador del Carmen #11B, Avenida Miguel Hidalgo
-                </p>
+                <p className="text-gray-600 mb-4">Sak Technology, Avenida Miguel Hidalgo, Andador del Carmen 11B, 29200 San Cristóbal de las Casas, Chis.
+
+              </p>
                 <Button asChild size="sm" className="bg-brand-blue hover:bg-brand-darkBlue text-white">
                   <Link to="/locations">Ver Detalles</Link>
                 </Button>
